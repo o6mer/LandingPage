@@ -28,6 +28,7 @@ nav a {
   font-weight: 700;
   padding: 10px 18px;
   border-radius: 3px;
+  transition: background-color 0.3s;
 }
 
 .nav_pages:hover,
@@ -60,6 +61,11 @@ nav a:last-child {
   padding: 10px 18px;
   color: white;
   border-radius: 3px;
+  transition: all 0.3s;
+}
+
+nav a:last-child:hover {
+  background-color: #2b4fc5;
 }
 
 header {
@@ -103,14 +109,24 @@ h2 {
   padding: 18px 24px;
 }
 
-.started_btns button:first-child {
+.get-started-btn {
   background-color: #325ce8;
   color: white;
+  transition: background-color 0.2s;
 }
 
-.started_btns button:last-child {
+.get-started-btn:hover {
+  background-color: #2b4fc5;
+}
+
+.one-pager-btn {
   background-color: #e6ecf3;
   color: #325ce8;
+  transition: background-color 0.2s;
+}
+
+.one-pager-btn:hover {
+  background-color: #ffffff;
 }
 
 .feedback {
@@ -129,11 +145,45 @@ h2 {
   border: none;
   transform: translate(-63%, 0) rotate(0.75turn);
   box-shadow: 0 0 20px 15px rgba(189, 189, 189, 0.185);
+  transition: all 0.3s;
 }
 
 .feedback:hover {
   transform: translate(-65%, 0) rotate(0.75turn) scale(1.05);
 }
 
-.header_container {
+.section-features {
+  padding: 70px 70px;
+}
+
+.section-features h2 {
+  color: black;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 64px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.feature {
+  display: grid;
+  gap: 18px;
+}
+
+.feature p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.feature img {
+  height: 42px;
+  margin-bottom: 16px;
+  background-color: #e6ecf3;
+  padding: 8px;
 }
