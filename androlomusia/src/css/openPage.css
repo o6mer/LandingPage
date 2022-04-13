@@ -1,0 +1,68 @@
+.open-page-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.star-img {
+  cursor: pointer;
+  transition: all 2s ease-in;
+  z-index: 2;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.space-img {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.space-vid video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  object-fit: cover;
+}
+
+.spin.star-img:hover {
+  animation: spining 2s infinite;
+}
+
+.spin-faster {
+  animation: spining-fast 1s infinite linear, fadeout 2.5s forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spining {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes spining-fast {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
