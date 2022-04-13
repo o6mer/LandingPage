@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  position: relative;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  animation: fadein 1s forwards;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home-page-container {
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  position: relative;
+  padding: 0 10rem;
+}
+
+.main-container {
+  margin: auto 0;
+}
+
+.fadeout {
+  animation: fadeout 0.5s forwards !important;
+}
+
+.fadein {
+  animation: fadein 0.5s forwards;
+}
+
+.disabled {
+  display: none !important;
+}
+
+.show {
+  /* opacity: 1;
+  visibility: visible; */
+  animation: fadein 1s forwards;
+}
+
+.section-container {
+  transition: all 1.5s;
+}
+
+.dude-video video {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  object-fit: cover;
+}
+
+.logo {
+  width: 50rem;
+  margin-left: auto;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
